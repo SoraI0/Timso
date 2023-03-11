@@ -1,11 +1,32 @@
 @import "_default";
 
 body {
-	font-family: monospace;
+	font-size: 18px;
+	line-height: 150%;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #EEEEEA;
+	
+	.title {
+		color: black;
+		font-size: 43px;
+		line-height: 105%;
+	}
+	.grey-text {
+		color: #7A7A7A;
+	}
+	.small-text {
+		font-size: 12px;
+		line-height: 27px;
+	}
 	.button {
+		color: white;
 		background: black;
 		border-radius: 20px;
-
+		padding: 15px 27px;
+	}
+	.button:hover {
+		background: rgba(0, 0, 0, 0.836);
+		transition: 0.15s;
 	}
 	.wrapper {
 

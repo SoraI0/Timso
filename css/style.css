@@ -39,9 +39,30 @@ body {
 }
 
 body {
-  font-family: monospace;
+  font-size: 18px;
+  line-height: 150%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #EEEEEA;
+}
+body .title {
+  color: black;
+  font-size: 43px;
+  line-height: 105%;
+}
+body .grey-text {
+  color: #7A7A7A;
+}
+body .small-text {
+  font-size: 12px;
+  line-height: 27px;
 }
 body .button {
+  color: white;
   background: black;
   border-radius: 20px;
+  padding: 15px 27px;
+}
+body .button:hover {
+  background: rgba(0, 0, 0, 0.836);
+  transition: 0.15s;
 }/*# sourceMappingURL=style.css.map */
