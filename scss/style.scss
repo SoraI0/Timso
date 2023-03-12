@@ -1,6 +1,7 @@
 @import "_default";
 
 body {
+
 	font-size: 18px;
 	line-height: 150%;
 	font-family: Arial, Helvetica, sans-serif;
@@ -36,14 +37,265 @@ body {
 		display:inline-block;
 		font-size: 18px;
 	}
+
 	.button a:hover {
 		background: rgba(0, 0, 0, 0.836);
 		transition: 0.15s;
 	}
 	.wrapper {
+
 		margin: 0px 20px;
+		.header {
+
+			&__container {
+				max-width: calc(1440px - 240px);
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				min-height: 158px;
+			}
+			&__logo {
+			}
+			
+	
+			&__menu {
+				
+			}
+
+			.menu {
+
+				display: flex;
+				flex: 1 auto;
+				justify-content: space-between;
+				align-items: center;
+				&__list {
+					display: flex;
+					align-items: flex-end;
+					padding-bottom: 0px;
+				}
 		
+				&__item {
+					margin-right: 58px;
+					margin-top: 15px;
+				}
+				&__item:first-child {
+					margin-left: 78px;
+				}
+		
+				&__link {
+				}
+			}
+		}
+		.teams {
+
+			margin-top: 72px;
+			&__container {
+			}
+			
+			&__title {
+				max-width: 618px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			&__switch {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 27px;
+				margin-top: 38px;
+			}
+	
+			&__switch-text {
+				font-size: 20px;
+				line-height: 100%;
+			}
+	
+			&__switch-button {
+				display: flex;
+				align-items: center;
+				width: 112px;
+				height: 46px;
+				border-radius: 50px;
+				background: #ADFF33;
+				cursor: pointer;
+				transition: 0.5s;
+			}
+			&__switch-button:hover {
+				background: #7c7c7c;
+				justify-content: flex-end;
+				
+				
+
+			}
+	
+			&__switch-circle {
+				width: 35px;
+				height: 35px;
+				background: white;
+				border-radius: 50px;
+				margin: 0 7px;
+			}
+	
+			&__image {
+				margin-top: 71px;
+				position: relative;
+			}
+
+			.image {
+				display: flex;
+				justify-content: center;
+				&__team {
+					width: 100%;
+					position: relative;
+					top: 27px;
+					left: 0;
+					z-index: 10;
+				}
+
+				&__team img {
+					width: 100%;
+				}
+		
+				&__msgs-up {
+					width: 100%;
+					z-index: 2;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				&__msgs-up img {
+					width: 100%;
+				}
+		
+				&__msgs-down {
+					width: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				&__msgs-down img {
+					width: 100%;
+				}
+			}
+		}
+		.simple-coordination {
+
+			
+			&__container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 80px;
+			}
+	
+			&__text-block {
+				margin-top: 20px;
+				max-width: 455px;
+				margin-left: 15px;
+			}
+	
+			&__title {
+			}
+	
+			&__descr {
+				margin-top: 31px;
+			}
+	
+			&__descr-grey {
+				font-size: 15px;
+				line-height: 140%;
+				margin-top: 37px;
+			}
+	
+			&__logos {
+				display: flex;
+				gap: 30px;
+			}
+	
+			&__image {
+				margin-top: -15px;
+				max-width: 549px;
+			}
+			&__image img {
+				width: 100%;
+			}
+		}
+		.custom-statuses {
+			margin-top: 247px;
+			&__container {
+				display: flex;
+				justify-content: space-between;
+				gap: 20px;
+			}
+	
+			&__image {
+				max-width: 650px;
+				margin-left: -70px;
+				display: flex;
+				align-items: center;
+				
+			}
+			&__image img {
+				width: 100%;
+			}
+	
+			&__text-block {
+				max-width: 405px;
+				margin-right: 70px;
+				margin-top: 40px;
+				
+			}
+	
+			&__title {
+			}
+	
+			&__descr {
+				margin-top: 18px;
+			}
+
+			&__small-descr {
+				margin-top: 24px;
+				margin-bottom: 30px;
+			}
+			&__button {
+				margin-top: 22px;
+			}
+		}		
+		.logos {
+			margin-top: 118px;
+			&__container {
+				padding-left: 40px;
+			}
+	
+			&__title {
+				max-width: 732px;
+			}
+	
+			&__descr {
+				margin-top: 23px;
+			}
+	
+			&__images {
+				margin-top: 55px;
+				display: flex;
+				
+				flex-wrap: wrap;
+				gap: 30px 11px;
+			}
+
+			&__image {
+				width: 172px;
+				display: flex;
+				align-items: center;
+			}
+
+			&__image img {
+				width: 100%;
+			}
+		}
 	}
+
 	.optimise {
 
 		&__container {
@@ -381,5 +633,112 @@ body {
 			}
 		}
 }	
+}
+
+		
+		
+		
+
+
+
+		@media screen and (max-width: 1280px) {
+			.custom-statuses__image {
+				margin-left: 0px;
+			}
+
+			.custom-statuses__text-block {
+				margin-right: 0px;
+			}
+		}
+
+		@media screen and (max-width: 900px) {
+			.simple-coordination__container {
+				flex-wrap: wrap;
+				gap: 20px;
+			}
+			.simple-coordination__text-block {
+				text-align: center;
+				margin-top: 40px;
+				width: 80%;
+				max-width: unset;
+				margin-left: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				
+			}
+			.simple-coordination__image {
+				width: 80%;
+			}
+			.custom-statuses {
+				margin-top: 70px;
+			}
+			.custom-statuses__container {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.custom-statuses__image {
+				margin-top: 30px;
+				order: 1;
+			}
+			.custom-statuses__text-block {
+				text-align: center;
+			}
+			.logos__container {
+				text-align: center;
+				padding-left: 0px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.logos__images {
+				justify-content: center;
+			}
+		}
+		@media screen and (max-width: 740px) {
+			.header__container {
+				flex-direction: column;
+			}
+			.header__logo {
+				margin: 20px auto 20px auto;
+			}
+			.menu__item{
+				margin: 0;
+				gap: 58px;
+			}
+			.menu {
+				flex-direction: column;
+				align-items: center;
+			}
+			.header__button {
+				margin-top: 20px;
+			}
+		}
+		@media screen and (max-width: 480px) {
+			.teams__title {
+				font-size: 32px;
+			}
+			.simple-coordination__title {
+				font-size: 32px;
+			}
+			.custom-statuses__title {
+				font-size: 32px;
+			}
+			.logos__title {
+				font-size: 32px;
+			}
+			.logos__images {
+				margin-top: 55px;
+				display: flex;
+				
+				flex-wrap: wrap;
+				gap: 30px 11px;
+			}
+
+			.logos__image {
+				width: 135px;
+			}
+		}
+	}
 }
 
