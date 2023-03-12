@@ -78,24 +78,174 @@ body .button:hover {
   background: rgba(0, 0, 0, 0.836);
   transition: 0.15s;
 }
+body .wrapper {
+  margin: 0 20px;
+}
 body .wrapper .header__container {
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 158px;
+  min-height: 158px;
 }
-body .wrapper .header__menu {
+body .wrapper .header .menu {
   display: flex;
   flex: 1 auto;
   justify-content: space-between;
 }
-body .wrapper .menu__list {
+body .wrapper .header .menu__list {
   display: flex;
   align-items: flex-end;
+  padding-bottom: 5px;
 }
-body .wrapper .menu__item {
+body .wrapper .header .menu__item {
   margin-right: 58px;
 }
-body .wrapper .menu__item:first-child {
+body .wrapper .header .menu__item:first-child {
   margin-left: 78px;
+}
+body .wrapper .header__button {
+  height: 58px;
+}
+body .wrapper .teams {
+  margin-top: 72px;
+}
+body .wrapper .teams__title {
+  max-width: 618px;
+  margin: 0 auto;
+  text-align: center;
+}
+body .wrapper .teams__switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  margin-top: 38px;
+}
+body .wrapper .teams__switch-text {
+  font-size: 20px;
+  line-height: 100%;
+}
+body .wrapper .teams__switch-button {
+  display: flex;
+  align-items: center;
+  width: 112px;
+  height: 46px;
+  border-radius: 50px;
+  background: #ADFF33;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body .wrapper .teams__switch-button:hover {
+  background: #7c7c7c;
+  justify-content: flex-end;
+}
+body .wrapper .teams__switch-circle {
+  width: 35px;
+  height: 35px;
+  background: white;
+  border-radius: 50px;
+  margin: 0 7px;
+}
+body .wrapper .teams__image {
+  margin-top: 71px;
+  position: relative;
+}
+body .wrapper .teams .image {
+  display: flex;
+  justify-content: center;
+}
+body .wrapper .teams .image__team {
+  max-width: 1114px;
+  position: relative;
+  top: 27px;
+  left: 0;
+  z-index: 10;
+}
+body .wrapper .teams .image__team img {
+  width: 100%;
+}
+body .wrapper .teams .image__msgs-up {
+  max-width: 1114px;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .wrapper .teams .image__msgs-up img {
+  width: 100%;
+}
+body .wrapper .teams .image__msgs-down {
+  max-width: 1114px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .wrapper .teams .image__msgs-down img {
+  width: 100%;
+}
+body .wrapper .simple-coordination__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+body .wrapper .simple-coordination__text-block {
+  margin-top: 20px;
+  max-width: 455px;
+  margin-left: 15px;
+}
+body .wrapper .simple-coordination__descr {
+  margin-top: 31px;
+}
+body .wrapper .simple-coordination__descr-grey {
+  font-size: 15px;
+  line-height: 140%;
+  margin-top: 37px;
+}
+body .wrapper .simple-coordination__logos {
+  display: flex;
+  gap: 30px;
+}
+body .wrapper .simple-coordination__image {
+  margin-top: -15px;
+  max-width: 549px;
+}
+body .wrapper .simple-coordination__image img {
+  width: 100%;
+}
+@media screen and (max-width: 900px) {
+  body .simple-coordination__container {
+    flex-wrap: wrap;
+  }
+  body .simple-coordination__text-block {
+    margin-top: 20px;
+    width: 80%;
+    max-width: unset;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 724px) {
+  body .header__container {
+    flex-direction: column;
+  }
+  body .header__logo {
+    margin: 20px auto 20px auto;
+  }
+  body .menu__item {
+    margin: 0;
+    gap: 58px;
+  }
+  body .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .header__button {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .teams__title {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */
