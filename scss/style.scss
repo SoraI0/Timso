@@ -5,7 +5,10 @@ body {
 	line-height: 150%;
 	font-family: Arial, Helvetica, sans-serif;
 	background: #EEEEEA;
-	
+	._container {
+		max-width: calc(1440px - 280px);
+		margin: 0 auto;
+	}
 	.title {
 		color: black;
 		font-size: 43px;
@@ -28,7 +31,10 @@ body {
 		background: rgba(0, 0, 0, 0.836);
 		transition: 0.15s;
 	}
-	.wrapper {
+	._container {
 
+	}
+	.wrapper {
+		
 	}
 }
