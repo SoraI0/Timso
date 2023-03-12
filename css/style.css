@@ -91,6 +91,7 @@ body .wrapper .header .menu {
   display: flex;
   flex: 1 auto;
   justify-content: space-between;
+  align-items: center;
 }
 body .wrapper .header .menu__list {
   display: flex;
@@ -244,7 +245,7 @@ body .wrapper .custom-statuses__small-descr {
   margin-bottom: 30px;
 }
 body .wrapper .custom-statuses__button {
-  margin-top: 100px;
+  margin-top: 22px;
 }
 body .wrapper .logos {
   margin-top: 118px;
