@@ -29,14 +29,13 @@ body {
 		font-size: 12px;
 		line-height: 27px;
 	}
-	.button {
-		color: white;
+	.button a {
 		background: black;
 		border-radius: 20px;
 		padding: 15px 27px;
+		color: white;
 	}
-	.button:hover {
-		color:white;
+	.button a:hover {
 		background: rgba(0, 0, 0, 0.836);
 		transition: 0.15s;
 	}
@@ -61,17 +60,19 @@ body {
 			}
 
 			.menu {
+
 				display: flex;
 				flex: 1 auto;
 				justify-content: space-between;
 				&__list {
 					display: flex;
 					align-items: flex-end;
-					padding-bottom: 5px;
+					padding-bottom: 0px;
 				}
 		
 				&__item {
 					margin-right: 58px;
+					margin-top: 15px;
 				}
 				&__item:first-child {
 					margin-left: 78px;
@@ -81,7 +82,7 @@ body {
 				}
 			}
 	
-			&__button {
+			&__button a{
 				height: 58px;
 			}
 		}
@@ -257,6 +258,9 @@ body {
 				margin-top: 24px;
 				margin-bottom: 30px;
 			}
+			&__button {
+				margin-top: 100px;
+			}
 		}		
 		.logos {
 			margin-top: 118px;
@@ -347,7 +351,7 @@ body {
 				justify-content: center;
 			}
 		}
-		@media screen and (max-width: 724px) {
+		@media screen and (max-width: 740px) {
 			.header__container {
 				flex-direction: column;
 			}

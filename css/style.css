@@ -67,14 +67,13 @@ body .small-text {
   font-size: 12px;
   line-height: 27px;
 }
-body .button {
-  color: white;
+body .button a {
   background: black;
   border-radius: 20px;
   padding: 15px 27px;
-}
-body .button:hover {
   color: white;
+}
+body .button a:hover {
   background: rgba(0, 0, 0, 0.836);
   transition: 0.15s;
 }
@@ -96,15 +95,16 @@ body .wrapper .header .menu {
 body .wrapper .header .menu__list {
   display: flex;
   align-items: flex-end;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
 }
 body .wrapper .header .menu__item {
   margin-right: 58px;
+  margin-top: 15px;
 }
 body .wrapper .header .menu__item:first-child {
   margin-left: 78px;
 }
-body .wrapper .header__button {
+body .wrapper .header__button a {
   height: 58px;
 }
 body .wrapper .teams {
@@ -243,6 +243,9 @@ body .wrapper .custom-statuses__small-descr {
   margin-top: 24px;
   margin-bottom: 30px;
 }
+body .wrapper .custom-statuses__button {
+  margin-top: 100px;
+}
 body .wrapper .logos {
   margin-top: 118px;
 }
@@ -320,7 +323,7 @@ body .wrapper .logos__image img {
     justify-content: center;
   }
 }
-@media screen and (max-width: 724px) {
+@media screen and (max-width: 740px) {
   body .wrapper .header__container {
     flex-direction: column;
   }
