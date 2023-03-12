@@ -39,11 +39,47 @@ body {
 		background: rgba(0, 0, 0, 0.836);
 		transition: 0.15s;
 	}
-	._container {
+	.wrapper {
+		.header {
+
+			&__container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				height: 158px;
+			}
+	
+			&__logo {
+			}
+	
+			&__menu {
+				display: flex;
+				flex: 1 auto;
+				justify-content: space-between;
+			}
+	
+			&__button {
+			}
+	}
+	.menu {
+	
+			&__list {
+				display: flex;
+				align-items: flex-end;
+			}
+	
+			&__item {
+				margin-right: 58px;
+			}
+			&__item:first-child {
+				margin-left: 78px;
+			}
+
+			&__link {
+			}
+	}
+	.button {
 
 	}
-	.wrapper {
-		
-	
 	}
 }

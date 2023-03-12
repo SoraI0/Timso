@@ -77,4 +77,25 @@ body .button:hover {
   color: white;
   background: rgba(0, 0, 0, 0.836);
   transition: 0.15s;
+}
+body .wrapper .header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 158px;
+}
+body .wrapper .header__menu {
+  display: flex;
+  flex: 1 auto;
+  justify-content: space-between;
+}
+body .wrapper .menu__list {
+  display: flex;
+  align-items: flex-end;
+}
+body .wrapper .menu__item {
+  margin-right: 58px;
+}
+body .wrapper .menu__item:first-child {
+  margin-left: 78px;
 }/*# sourceMappingURL=style.css.map */
