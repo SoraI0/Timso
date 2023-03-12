@@ -156,7 +156,7 @@ body .wrapper .teams .image {
   justify-content: center;
 }
 body .wrapper .teams .image__team {
-  max-width: 1114px;
+  width: 100%;
   position: relative;
   top: 27px;
   left: 0;
@@ -166,7 +166,7 @@ body .wrapper .teams .image__team img {
   width: 100%;
 }
 body .wrapper .teams .image__msgs-up {
-  max-width: 1114px;
+  width: 100%;
   z-index: 2;
   position: absolute;
   top: 0;
@@ -176,7 +176,7 @@ body .wrapper .teams .image__msgs-up img {
   width: 100%;
 }
 body .wrapper .teams .image__msgs-down {
-  max-width: 1114px;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -214,38 +214,151 @@ body .wrapper .simple-coordination__image {
 body .wrapper .simple-coordination__image img {
   width: 100%;
 }
-@media screen and (max-width: 900px) {
-  body .simple-coordination__container {
-    flex-wrap: wrap;
+body .wrapper .custom-statuses {
+  margin-top: 247px;
+}
+body .wrapper .custom-statuses__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+body .wrapper .custom-statuses__image {
+  max-width: 650px;
+  margin-left: -70px;
+  display: flex;
+  align-items: center;
+}
+body .wrapper .custom-statuses__image img {
+  width: 100%;
+}
+body .wrapper .custom-statuses__text-block {
+  max-width: 405px;
+  margin-right: 70px;
+  margin-top: 40px;
+}
+body .wrapper .custom-statuses__descr {
+  margin-top: 18px;
+}
+body .wrapper .custom-statuses__small-descr {
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+body .wrapper .logos {
+  margin-top: 118px;
+}
+body .wrapper .logos__container {
+  padding-left: 40px;
+}
+body .wrapper .logos__title {
+  max-width: 732px;
+}
+body .wrapper .logos__descr {
+  margin-top: 23px;
+}
+body .wrapper .logos__images {
+  margin-top: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 11px;
+}
+body .wrapper .logos__image {
+  width: 172px;
+  display: flex;
+  align-items: center;
+}
+body .wrapper .logos__image img {
+  width: 100%;
+}
+@media screen and (max-width: 1280px) {
+  body .wrapper .custom-statuses__image {
+    margin-left: 0px;
   }
-  body .simple-coordination__text-block {
-    margin-top: 20px;
+  body .wrapper .custom-statuses__text-block {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 900px) {
+  body .wrapper .simple-coordination__container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  body .wrapper .simple-coordination__text-block {
+    text-align: center;
+    margin-top: 40px;
     width: 80%;
     max-width: unset;
     margin-left: 0;
-  }
-}
-@media screen and (max-width: 724px) {
-  body .header__container {
-    flex-direction: column;
-  }
-  body .header__logo {
-    margin: 20px auto 20px auto;
-  }
-  body .menu__item {
-    margin: 0;
-    gap: 58px;
-  }
-  body .menu {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
-  body .header__button {
+  body .wrapper .simple-coordination__image {
+    width: 80%;
+  }
+  body .wrapper .custom-statuses {
+    margin-top: 70px;
+  }
+  body .wrapper .custom-statuses__container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body .wrapper .custom-statuses__image {
+    margin-top: 30px;
+    order: 1;
+  }
+  body .wrapper .custom-statuses__text-block {
+    text-align: center;
+  }
+  body .wrapper .logos__container {
+    text-align: center;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .wrapper .logos__images {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 724px) {
+  body .wrapper .header__container {
+    flex-direction: column;
+  }
+  body .wrapper .header__logo {
+    margin: 20px auto 20px auto;
+  }
+  body .wrapper .menu__item {
+    margin: 0;
+    gap: 58px;
+  }
+  body .wrapper .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .wrapper .header__button {
     margin-top: 20px;
   }
 }
 @media screen and (max-width: 480px) {
-  body .teams__title {
+  body .wrapper .teams__title {
     font-size: 32px;
+  }
+  body .wrapper .simple-coordination__title {
+    font-size: 32px;
+  }
+  body .wrapper .custom-statuses__title {
+    font-size: 32px;
+  }
+  body .wrapper .logos__title {
+    font-size: 32px;
+  }
+  body .wrapper .logos__images {
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 11px;
+  }
+  body .wrapper .logos__image {
+    width: 135px;
   }
 }/*# sourceMappingURL=style.css.map */

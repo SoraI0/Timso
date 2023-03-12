@@ -1,6 +1,7 @@
 @import "_default";
 
 body {
+	
 	font-size: 18px;
 	line-height: 150%;
 	font-family: Arial, Helvetica, sans-serif;
@@ -40,6 +41,7 @@ body {
 		transition: 0.15s;
 	}
 	.wrapper {
+		
 		margin: 0 20px;
 		.header {
 
@@ -143,7 +145,7 @@ body {
 				display: flex;
 				justify-content: center;
 				&__team {
-					max-width: 1114px;
+					width: 100%;
 					position: relative;
 					top: 27px;
 					left: 0;
@@ -155,7 +157,7 @@ body {
 				}
 		
 				&__msgs-up {
-					max-width: 1114px;
+					width: 100%;
 					z-index: 2;
 					position: absolute;
 					top: 0;
@@ -166,7 +168,7 @@ body {
 				}
 		
 				&__msgs-down {
-					max-width: 1114px;
+					width: 100%;
 					position: absolute;
 					top: 0;
 					left: 0;
@@ -178,6 +180,7 @@ body {
 		}
 		.simple-coordination {
 
+			
 			&__container {
 				display: flex;
 				justify-content: center;
@@ -217,47 +220,178 @@ body {
 				width: 100%;
 			}
 		}
-		
-	}
-
-	@media screen and (max-width: 900px) {
-		.simple-coordination__container {
-			flex-wrap: wrap;
-		}
-		.simple-coordination__text-block {
-			margin-top: 20px;
-			width: 80%;
-			max-width: unset;
-			margin-left: 0;
-		}
-	}
-
-	@media screen and (max-width: 724px) {
-		.header__container {
-			flex-direction: column;
-		}
-		.header__logo {
-			margin: 20px auto 20px auto;
-		}
-		.menu__item{
-			margin: 0;
-			gap: 58px;
-		}
-		.menu {
-			flex-direction: column;
-			align-items: center;
-		}
-		.header__button {
-			margin-top: 20px;
-		}
-	}
+		.custom-statuses {
+			margin-top: 247px;
+			&__container {
+				display: flex;
+				justify-content: space-between;
+				gap: 20px;
+			}
 	
-	@media screen and (max-width: 480px) {
-		.teams__title {
-			font-size: 32px;
+			&__image {
+				max-width: 650px;
+				margin-left: -70px;
+				display: flex;
+				align-items: center;
+				
+			}
+			&__image img {
+				width: 100%;
+			}
+	
+			&__text-block {
+				max-width: 405px;
+				margin-right: 70px;
+				margin-top: 40px;
+				
+			}
+	
+			&__title {
+			}
+	
+			&__descr {
+				margin-top: 18px;
+			}
+
+			&__small-descr {
+				margin-top: 24px;
+				margin-bottom: 30px;
+			}
+		}		
+		.logos {
+			margin-top: 118px;
+			&__container {
+				padding-left: 40px;
+			}
+	
+			&__title {
+				max-width: 732px;
+			}
+	
+			&__descr {
+				margin-top: 23px;
+			}
+	
+			&__images {
+				margin-top: 55px;
+				display: flex;
+				
+				flex-wrap: wrap;
+				gap: 30px 11px;
+			}
+
+			&__image {
+				width: 172px;
+				display: flex;
+				align-items: center;
+			}
+
+			&__image img {
+				width: 100%;
+			}
+		}
+
+
+
+		@media screen and (max-width: 1280px) {
+			.custom-statuses__image {
+				margin-left: 0px;
+			}
+
+			.custom-statuses__text-block {
+				margin-right: 0px;
+			}
+		}
+
+		@media screen and (max-width: 900px) {
+			.simple-coordination__container {
+				flex-wrap: wrap;
+				gap: 20px;
+			}
+			.simple-coordination__text-block {
+				text-align: center;
+				margin-top: 40px;
+				width: 80%;
+				max-width: unset;
+				margin-left: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				
+			}
+			.simple-coordination__image {
+				width: 80%;
+			}
+			.custom-statuses {
+				margin-top: 70px;
+			}
+			.custom-statuses__container {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.custom-statuses__image {
+				margin-top: 30px;
+				order: 1;
+			}
+			.custom-statuses__text-block {
+				text-align: center;
+			}
+			.logos__container {
+				text-align: center;
+				padding-left: 0px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.logos__images {
+				justify-content: center;
+			}
+		}
+		@media screen and (max-width: 724px) {
+			.header__container {
+				flex-direction: column;
+			}
+			.header__logo {
+				margin: 20px auto 20px auto;
+			}
+			.menu__item{
+				margin: 0;
+				gap: 58px;
+			}
+			.menu {
+				flex-direction: column;
+				align-items: center;
+			}
+			.header__button {
+				margin-top: 20px;
+			}
+		}
+		@media screen and (max-width: 480px) {
+			.teams__title {
+				font-size: 32px;
+			}
+			.simple-coordination__title {
+				font-size: 32px;
+			}
+			.custom-statuses__title {
+				font-size: 32px;
+			}
+			.logos__title {
+				font-size: 32px;
+			}
+			.logos__images {
+				margin-top: 55px;
+				display: flex;
+				
+				flex-wrap: wrap;
+				gap: 30px 11px;
+			}
+
+			.logos__image {
+				width: 135px;
+			}
 		}
 	}
-	
 }
 
 
