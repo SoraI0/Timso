@@ -34,7 +34,8 @@ body {
 		border-radius: 20px;
 		padding: 15px 27px;
 		color: white;
-	}
+		display:inline-block;
+	  }
 	.button a:hover {
 		background: rgba(0, 0, 0, 0.836);
 		transition: 0.15s;
@@ -81,10 +82,6 @@ body {
 		
 				&__link {
 				}
-			}
-	
-			&__button a{
-				height: 58px;
 			}
 		}
 		.teams {
